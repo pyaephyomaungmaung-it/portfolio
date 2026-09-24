@@ -1,0 +1,19 @@
+{
+  "name": "pyae-phyo-maung-maung-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website for Pyae Phyo Maung Maung - CS Graduate & AI Software Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server .",
+    "dev": "npx live-server ."
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "ai",
+    "fastapi",
+    "singapore"
+  ],
+  "author": "Pyae Phyo Maung Maung",
+  "license": "MIT"
+}

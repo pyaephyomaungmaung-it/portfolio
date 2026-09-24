@@ -1,0 +1,9 @@
+# Dependencies & Logs
+node_modules/
+*.log
+.DS_Store
+
+# System & IDE
+.vscode/
+.idea/
+.system_generated/

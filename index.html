@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyae Phyo Maung Maung | Computer Science & AI Software Engineer</title>
+  <meta name="description" content="Portfolio of Pyae Phyo Maung Maung - Computer Science graduate specializing in AI recommendation engines, custom data structures (BST/DLL), and full-stack software engineering.">
+  <meta name="keywords" content="Pyae Phyo Maung Maung, Software Engineer, Computer Science, AI Systems, FastAPI, Groq API, Gemini API, Laravel, Python, Singapore">
+  <meta name="author" content="Pyae Phyo Maung Maung">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Pyae Phyo Maung Maung | Portfolio">
+  <meta property="og:description" content="Computer Science graduate & AI Software Engineer based in Singapore.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lights & Grid -->
+  <div class="bg-grid"></div>
+  <div class="ambient-light ambient-light-1"></div>
+  <div class="ambient-light ambient-light-2"></div>
+  <div class="ambient-light ambient-light-3"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-badge">P</div>
+        <span>Pyae Phyo<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#playground" class="nav-link" id="nav-link-playground">AI Simulator</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
+          <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="terminal-trigger-btn" id="terminal-trigger-btn" title="Open Interactive CLI Terminal">
+          <i class="fa-solid fa-terminal"></i>
+          <span>Terminal</span>
+          <span class="kbd-badge">Ctrl K</span>
+        </button>
+
+        <a href="#contact" class="btn btn-outline-cyan" id="nav-hire-btn">Hire Me</a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content-col">
+          <div class="availability-pill">
+            <span class="status-dot"></span>
+            <span>Open for Entry-Level Software Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-text">Pyae Phyo</span><br>Maung Maung
+          </h1>
+
+          <div class="hero-role">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Software Engineer & Applied AI Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            Computer Science graduate based in Singapore specializing in scalable software engineering and intelligent AI systems. Experienced in architecting <strong>LLM-integrated recommendation engines</strong>, <strong>custom data structures (BST/DLL)</strong>, and robust <strong>full-stack web platforms</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#playground" class="btn btn-secondary" id="hero-cta-demo">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> AI Engine Demo
+            </a>
+            <a href="CV.md" download class="btn btn-outline-cyan" id="hero-cta-cv">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/pyaephyo-maungmaung" target="_blank" rel="noopener" class="social-icon-btn" title="LinkedIn Profile" id="social-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/PyaePhyoMaungMaung-it" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub Repository" id="social-github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:pyaephyomm191@gmail.com" class="social-icon-btn" title="Direct Email" id="social-email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <button class="social-icon-btn" id="copy-email-btn" title="Copy Email Address">
+              <i class="fa-solid fa-copy"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Profile Card -->
+        <div class="hero-card-frame">
+          <div class="profile-avatar-wrapper">
+            <div class="profile-avatar-bg"></div>
+            <div class="profile-card">
+              <div class="avatar-img-container">
+                <img src="./assets/images/avatar.png" alt="Pyae Phyo Maung Maung Avatar" id="hero-avatar-img">
+              </div>
+
+              <div class="profile-quick-stats">
+                <div class="quick-stat-box">
+                  <div class="stat-label">Location</div>
+                  <div class="stat-val">Singapore 🇸🇬</div>
+                </div>
+                <div class="quick-stat-box">
+                  <div class="stat-label">Degree</div>
+                  <div class="stat-val">BSc (Hons) CS</div>
+                </div>
+                <div class="quick-stat-box">
+                  <div class="stat-label">Diploma GPA</div>
+                  <div class="stat-val">3.90 / 4.00</div>
+                </div>
+                <div class="quick-stat-box">
+                  <div class="stat-label">Uptime Architecture</div>
+                  <div class="stat-val">100% Fallback</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         STATS BANNER SECTION
+         ========================================================================== -->
+    <section class="stats-banner-section" id="about">
+      <div class="container stats-grid">
+        <div class="stat-counter-card">
+          <div class="stat-counter-val">3.90</div>
+          <div class="stat-counter-title">NCC Level 5 GPA</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-counter-val">6+</div>
+          <div class="stat-counter-title">Core SE & AI Projects</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-counter-val">3</div>
+          <div class="stat-counter-title">Spoken Languages</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-counter-val">100%</div>
+          <div class="stat-counter-title">Deterministic API Reliability</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS MATRIX
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Toolkit</div>
+          <h2 class="section-title">Core Skills & Engineering Competencies</h2>
+          <p class="section-subtitle">A balanced expertise across programming languages, AI framework integration, full-stack backends, and fundamental data structures.</p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="languages">Languages</button>
+          <button class="skill-filter-btn" data-filter="ai-ml">GenAI & ML</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend & Web</button>
+          <button class="skill-filter-btn" data-filter="dsa">DSA & Architecture</button>
+        </div>
+
+        <div class="skills-cards-grid" id="skills-grid">
+          <!-- Card 1: Languages -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>Python</span>
+              <span class="skill-pill"><span class="skill-dot"></span>JavaScript</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Java (JavaSE)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>PHP</span>
+              <span class="skill-pill"><span class="skill-dot"></span>SQL (MySQL)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <!-- Card 2: GenAI & Machine Learning -->
+          <div class="skill-category-card" data-category="ai-ml">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="skill-cat-title">Generative AI & ML</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>Groq API (GPT-OSS)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Google Gemini API</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Scikit-Learn (TF-IDF, KNN)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Prompt Engineering</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Rule-Based Fallbacks</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Pandas & NumPy</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Neural Networks & Random Forest</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Backend & Web Frameworks -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-server"></i></div>
+              <h3 class="skill-cat-title">Backend & Web Frameworks</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>FastAPI</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Laravel (MVC)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>RESTful API Architecture</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Uvicorn & Pydantic</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Bootstrap & Streamlit</span>
+              <span class="skill-pill"><span class="skill-dot"></span>XAMPP & Relational DBs</span>
+            </div>
+          </div>
+
+          <!-- Card 4: CS Fundamentals & DSA -->
+          <div class="skill-category-card" data-category="dsa">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h3 class="skill-cat-title">CS Fundamentals & Testing</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>Binary Search Trees (BST)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Doubly Linked Lists</span>
+              <span class="skill-pill"><span class="skill-dot"></span>OOP Design Patterns</span>
+              <span class="skill-pill"><span class="skill-dot"></span>UML Class & Sequence Diagrams</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Unittest & Mocking</span>
+              <span class="skill-pill"><span class="skill-dot"></span>UI/UX Usability Heuristics</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Developer Tools & Platforms -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3 class="skill-cat-title">Tools & Infrastructure</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>Git & GitHub</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Azure IoT Central</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Netlify</span>
+              <span class="skill-pill"><span class="skill-dot"></span>StarUML</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Figma</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Spoken Languages -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-language"></i></div>
+              <h3 class="skill-cat-title">Spoken Languages</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill"><span class="skill-dot"></span>English (Fluent)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Burmese (Native)</span>
+              <span class="skill-pill"><span class="skill-dot"></span>Mandarin (Conversational)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-laptop-code"></i> Portfolio Showcase</div>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-subtitle">Explore key technical projects spanning AI recommendation systems, algorithmic data structures, IoT telemetry, and web apps.</p>
+        </div>
+
+        <div class="projects-filter-nav">
+          <button class="skill-filter-btn active" data-pfilter="all">All Projects</button>
+          <button class="skill-filter-btn" data-pfilter="ai">AI & ML</button>
+          <button class="skill-filter-btn" data-pfilter="fullstack">Full-Stack Web</button>
+          <button class="skill-filter-btn" data-pfilter="dsa">Systems & DSA</button>
+          <button class="skill-filter-btn" data-pfilter="iot">IoT & Cloud</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: EcoBite -->
+          <article class="project-card" data-pcategory="ai fullstack">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-robot"></i> Featured GenAI Project</span>
+              <h3 class="project-title">
+                EcoBite – AI Recommendation Engine
+                <span class="project-year">2026</span>
+              </h3>
+              <p class="project-desc">
+                Multi-objective recommendation system balancing product semantic similarity ($w_{\text{sim}}$) against eco-friendliness ($w_{\text{eco}}$) with LLM lifecycle impact nudges and 100% uptime fallback logic.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">TF-IDF & KNN</span>
+                <span class="tech-tag">Groq API</span>
+                <span class="tech-tag">Gemini API</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('ecobite')">
+                <span>View Architecture & Specs</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="#playground" class="btn btn-outline-cyan" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Try Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 2: SOLA -->
+          <article class="project-card" data-pcategory="dsa">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-code"></i> DSA & Algorithmic</span>
+              <h3 class="project-title">
+                Sg Online Library (SOLA)
+                <span class="project-year">2025</span>
+              </h3>
+              <p class="project-desc">
+                Modular CLI library system implementing custom Binary Search Tree (BST) for $O(\log n)$ catalog traversal and custom Doubly Linked Lists for borrower management.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">OOP Architecture</span>
+                <span class="tech-tag">Binary Search Tree</span>
+                <span class="tech-tag">Doubly Linked List</span>
+                <span class="tech-tag">UML Modeling</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('sola')">
+                <span>View DSA Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Real Estate Commission -->
+          <article class="project-card" data-pcategory="dsa fullstack">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-calculator"></i> OOP & Financial</span>
+              <h3 class="project-title">
+                Real Estate Commission Engine
+                <span class="project-year">2025</span>
+              </h3>
+              <p class="project-desc">
+                Automated multi-tier commission calculation engine enforcing property class hierarchies, $O(1)$ inventory array updates, and distributed commission statements.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OOP Inheritance</span>
+                <span class="tech-tag">Dynamic Arrays</span>
+                <span class="tech-tag">UML Class Modeling</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('realestate')">
+                <span>View System Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Hotel Management -->
+          <article class="project-card" data-pcategory="fullstack">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-hotel"></i> Full-Stack Web</span>
+              <h3 class="project-title">
+                Hotel Booking & Management
+                <span class="project-year">2024</span>
+              </h3>
+              <p class="project-desc">
+                Full-stack web application built with Laravel MVC, featuring customer room booking workflows, admin control panels, and custom StarUML database ERDs.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Laravel MVC</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">XAMPP</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('hotel')">
+                <span>View MVC Architecture</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5: Diabetes Prediction -->
+          <article class="project-card" data-pcategory="ai">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-chart-line"></i> Machine Learning</span>
+              <h3 class="project-title">
+                Diabetes Prediction Engine
+                <span class="project-year">2025</span>
+              </h3>
+              <p class="project-desc">
+                Supervised machine learning pipeline evaluating Pima Indians medical dataset. Benchmark achieved 83% classification accuracy using Neural Networks.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Neural Networks</span>
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">Orange3</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('diabetes')">
+                <span>View Benchmark Metrics</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6: BMS IoT Simulation -->
+          <article class="project-card" data-pcategory="iot">
+            <div>
+              <span class="project-badge"><i class="fa-solid fa-car-battery"></i> IoT Telemetry</span>
+              <h3 class="project-title">
+                EV Battery Management IoT
+                <span class="project-year">2025</span>
+              </h3>
+              <p class="project-desc">
+                Real-time EV battery telemetry simulation on Azure IoT Central tracking voltage, current, SOC, and SOH to prevent delayed fault detection.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Azure IoT Central</span>
+                <span class="tech-tag">Telemetry Processing</span>
+                <span class="tech-tag">Cloud Architecture</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details" onclick="openProjectModal('bms')">
+                <span>View Azure Architecture</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE PLAYGROUND / SIMULATOR SECTION
+         ========================================================================== -->
+    <section class="playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-flask"></i> Interactive Lab</div>
+          <h2 class="section-title">EcoBite Multi-Objective Recommendation Engine</h2>
+          <p class="section-subtitle">Test how Pyae Phyo's recommendation engine balances semantic similarity against eco-score weights in real time.</p>
+        </div>
+
+        <div class="simulator-card">
+          <div class="simulator-grid">
+            <!-- Controls Panel -->
+            <div class="sim-controls-panel">
+              <div class="control-group">
+                <label class="control-label" for="sim-product-select">
+                  <span>Select Target Product:</span>
+                </label>
+                <select class="form-select" id="sim-product-select">
+                  <option value="almond">Organic Almond Milk (Eco Grade A)</option>
+                  <option value="beef">Processed Beef Jerky (Eco Grade E)</option>
+                  <option value="oat">Oat Granola Bar (Eco Grade B)</option>
+                  <option value="cola">Sparkling Soda Can (Eco Grade D)</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="sim-weight-slider">
+                  <span>Eco-Weight ($w_{\text{eco}}$):</span>
+                  <span class="control-val-badge" id="sim-weight-val">0.50</span>
+                </label>
+                <input type="range" class="form-range" id="sim-weight-slider" min="0" max="1" step="0.05" value="0.5">
+                <div style="display:flex; justify-size:space-between; font-size:0.75rem; color:var(--text-dim);">
+                  <span>0.0 (Pure Similarity)</span>
+                  <span>1.0 (Pure Eco-Score)</span>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">
+                  <span>LLM Provider Status:</span>
+                </label>
+                <div style="display:flex; gap:0.5rem; align-items:center; font-size:0.85rem; color:var(--text-muted);">
+                  <span style="color:#34d399;"><i class="fa-solid fa-circle-check"></i> Groq API (Primary)</span>
+                  <span>•</span>
+                  <span style="color:#38bdf8;"><i class="fa-solid fa-circle-check"></i> Gemini API (Fallback 1)</span>
+                  <span>•</span>
+                  <span style="color:#a855f7;"><i class="fa-solid fa-shield-halved"></i> Rule-Based (100% Uptime)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Output & Results Panel -->
+            <div class="sim-results-panel">
+              <div>
+                <div class="results-header">
+                  <span>Top Recommended Substitute</span>
+                  <span class="kbd-badge" id="sim-score-badge">Final Rank: #1</span>
+                </div>
+
+                <div style="margin-bottom:1rem;">
+                  <h4 style="font-size:1.1rem; color:var(--text-main);" id="sim-rec-name">Oat Milk Organic 1L</h4>
+                  <p style="font-size:0.85rem; color:var(--text-dim);" id="sim-rec-category">Category: Plant-Based Beverages</p>
+                </div>
+
+                <div class="nudge-output-box">
+                  <span class="nudge-tag"><i class="fa-solid fa-sparkles"></i> AI Generated Eco-Nudge</span>
+                  <p id="sim-nudge-text" style="line-height:1.5;">
+                    "Switching to Oat Milk Organic cuts water consumption by 82% and greenhouse carbon emissions by 64% compared to dairy alternatives!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="scores-breakdown-grid">
+                <div class="score-metric-card">
+                  <div class="score-metric-name">Similarity ($S_{\text{sim}}$)</div>
+                  <div class="score-metric-val" id="score-sim-val">0.92</div>
+                </div>
+                <div class="score-metric-card">
+                  <div class="score-metric-name">Eco Grade ($S_{\text{eco}}$)</div>
+                  <div class="score-metric-val" id="score-eco-val" style="color:#34d399;">Grade A (0.95)</div>
+                </div>
+                <div class="score-metric-card">
+                  <div class="score-metric-name">Final Score ($R$)</div>
+                  <div class="score-metric-val" id="score-final-val" style="color:var(--accent-cyan);">0.935</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LEADERSHIP & EXPERIENCE TIMELINE
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Track Record</div>
+          <h2 class="section-title">Leadership & Professional Experience</h2>
+          <p class="section-subtitle">Demonstrated ability to lead technical software teams and optimize inventory operations for measurable business impact.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <h3 class="timeline-role">Technical Team Lead (PHP & Laravel Web Project)</h3>
+              <div class="timeline-org">
+                <span>Strategy First International College</span>
+                <span class="timeline-date">Mar 2024 – Jun 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Directed a software project team through the full lifecycle of a web application from requirement scoping to final deployment.</li>
+                <li>Structured milestone sprints, distributed weekly feature backlogs, and coordinated code reviews to facilitate clean Git merges.</li>
+                <li>Enforced modular MVC coding standards and unit test verifications before production deployment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <h3 class="timeline-role">Sales Operations & Inventory Lead</h3>
+              <div class="timeline-org">
+                <span>Tike War Myanmar</span>
+                <span class="timeline-date">Aug 2020 – Sep 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Supervised retail and warehouse inventory operations, managing a 3-person team handling machine parts and equipment.</li>
+                <li>Optimized merchandising and Point of Sale (POS) workflows, contributing to a direct 30% increase in total sales volume.</li>
+                <li>Spearheaded social media marketing initiatives to expand local customer acquisition.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & CERTIFICATIONS
+         ========================================================================== -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Credentials</div>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Academic foundations in Computer Science with top honors and specialized industry certifications.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Column -->
+          <div>
+            <h3 style="font-size:1.4rem; margin-bottom:1.5rem; display:flex; align-items:center; gap:0.5rem;">
+              <i class="fa-solid fa-university" style="color:var(--accent-cyan);"></i> Degrees & Diplomas
+            </h3>
+            <div class="edu-cards-list">
+              <!-- Degree 1 -->
+              <div class="edu-card">
+                <h4 class="edu-degree">Bachelor of Computing Science</h4>
+                <div class="edu-school">Coventry University (Singapore Campus)</div>
+                <div class="edu-meta">
+                  <span>Mar 2025 – Sep 2026</span>
+                  <span class="gpa-badge"><i class="fa-solid fa-user-shield"></i> SCS Member</span>
+                </div>
+              </div>
+
+              <!-- Degree 2 -->
+              <div class="edu-card">
+                <h4 class="edu-degree">Diploma in NCC Level 5 Computing with Business Management</h4>
+                <div class="edu-school">Strategy First International College</div>
+                <div class="edu-meta">
+                  <span>Jan 2023 – Jan 2025</span>
+                  <span class="gpa-badge">GPA 3.90 / 4.00</span>
+                </div>
+              </div>
+
+              <!-- Degree 3 -->
+              <div class="edu-card">
+                <h4 class="edu-degree">Diploma in Computing with Business Management</h4>
+                <div class="edu-school">Strategy First International College</div>
+                <div class="edu-meta">
+                  <span>Jan 2022 – Dec 2023</span>
+                  <span class="gpa-badge">GPA 3.90 / 4.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div>
+            <h3 style="font-size:1.4rem; margin-bottom:1.5rem; display:flex; align-items:center; gap:0.5rem;">
+              <i class="fa-solid fa-certificate" style="color:var(--accent-purple);"></i> Verified Certifications
+            </h3>
+            <div class="certs-list">
+              <div class="cert-item-card">
+                <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <div class="cert-title">AI Foundations</div>
+                  <div class="cert-issuer">DeepLearning.AI (Andrew Ng) • Coursera</div>
+                </div>
+              </div>
+
+              <div class="cert-item-card">
+                <div class="cert-icon"><i class="fa-solid fa-chart-diagram"></i></div>
+                <div>
+                  <div class="cert-title">Machine Learning with Python</div>
+                  <div class="cert-issuer">Coursera (Scikit-Learn & Models)</div>
+                </div>
+              </div>
+
+              <div class="cert-item-card">
+                <div class="cert-icon"><i class="fa-brands fa-laravel"></i></div>
+                <div>
+                  <div class="cert-title">Web Development with PHP & Laravel</div>
+                  <div class="cert-issuer">Strategy First International College</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-subtitle">Currently exploring entry-level Software Engineering & AI developer positions in Singapore. Feel free to connect!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Card -->
+          <div class="contact-info-card">
+            <h3 style="font-size:1.3rem; font-weight:700;">Contact Information</h3>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Singapore 🇸🇬</div>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:pyaephyomm191@gmail.com" class="contact-val">pyaephyomm191@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <a href="tel:+6580787476" class="contact-val">+65 80787476</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://linkedin.com/in/pyaephyo-maungmaung" target="_blank" rel="noopener" class="contact-val">pyaephyo-maungmaung</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <a href="https://github.com/PyaePhyoMaungMaung-it" target="_blank" rel="noopener" class="contact-val">PyaePhyoMaungMaung-it</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="contact-form-card">
+            <form id="portfolio-contact-form" name="contact" data-netlify="true" method="POST">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Name</label>
+                <input type="text" class="form-input" id="form-name" name="name" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Your Email</label>
+                <input type="email" class="form-input" id="form-email" name="email" placeholder="john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-subject">Subject</label>
+                <input type="text" class="form-input" id="form-subject" name="subject" placeholder="Entry-Level Software Engineering Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message</label>
+                <textarea class="form-textarea" id="form-message" name="message" placeholder="Hi Pyae Phyo, we would like to discuss an opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;" id="form-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        © 2026 Pyae Phyo Maung Maung. Built with Vanilla Web Tech & Modern Aesthetics.
+      </div>
+      <button class="back-to-top" id="back-to-top-btn" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: TERMINAL CLI OVERLAY
+       ========================================================================== -->
+  <div class="modal-overlay" id="terminal-modal">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <span class="t-dot t-red"></span>
+          <span class="t-dot t-yellow"></span>
+          <span class="t-dot t-green"></span>
+        </div>
+        <div style="font-size:0.8rem; color:#8b949e;">pyaephyo@singapore-node:~</div>
+        <button class="modal-close-btn" style="position:static; width:24px; height:24px;" id="term-close-btn">&times;</button>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <p>PyaePhyo OS v2026.1 (x86_64-singapore-linux-gnu)</p>
+        <p>Type <span class="t-prompt">'help'</span> for a list of available commands or <span class="t-prompt">'skills'</span> to inspect stack.</p>
+        <br>
+      </div>
+      <div style="padding:0.75rem 1.5rem; border-top:1px solid #30363d; background:#161b22;">
+        <div class="terminal-input-row">
+          <span class="t-prompt">visitor@pyaephyo:~$</span>
+          <input type="text" class="t-input" id="terminal-input" placeholder="Type a command (e.g., help, cv, projects)..." autofocus>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODALS: PROJECT SPECS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      <div id="project-modal-body">
+        <!-- Dynamic Content Inserted via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
